@@ -6,13 +6,13 @@ function setComments($conn) {
 			$date = $_POST['date'];
 			$message = $_POST['message'];
 			
-			$sql = "INSERT INTO comments (uid, date, message) VALUES ('$uid', '$date', '$message')";
+			$sql = "INSERT INTO posts (uid, date, message) VALUES ('$uid', '$date', '$message')";
 			$result = $conn->query($sql); 
 	}
 }
 
 function getComments($conn) {
-	$sql = "SELECT * FROM comments";
+	$sql = "SELECT * FROM posts";
 	$result = $conn->query($sql);
 	while ($row = $result->fetch_assoc()) {
 		echo "<div class='w3-container w3-card w3-white w3-round w3-margin'><br>";
@@ -46,7 +46,7 @@ function editComments($conn) {
 			$date = $_POST['date'];
 			$message = $_POST['message'];
 		
-			$sql = "UPDATE comments SET message='$message' WHERE cid='$cid'";
+			$sql = "UPDATE posts SET message='$message' WHERE cid='$cid'";
 			$result = $conn->query($sql);
 			header("Location: profile_info.php");
 	}
@@ -56,11 +56,10 @@ function deleteComments($conn) {
 	if (isset($_POST['commentDelete'])) {
 			$cid = $_POST['cid'];
 		
-			$sql = "DELETE FROM comments WHERE cid='$cid'";
+			$sql = "DELETE FROM posts WHERE cid='$cid'";
 			$result = $conn->query($sql);
 			header("Location: profile_info.php");
 	}
 }
 ?>
-
 
