@@ -1,0 +1,266 @@
+
+body{
+	 
+	margin: 0;
+    /*font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    */
+    font-family:Tahoma;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #f4f2f2;
+}
+html {
+	background-color: #f4f2f2;
+	padding: 0px;
+	margin:0px;
+}
+/*bootstrap*/
+.navbar {
+	background-color: #060047 !important;
+}
+.navbar .container-fluid a {
+	color:#87CEEB;
+}
+a.navbar-brand.d-flex.align-items-center{
+	font-size: 28px;
+}
+.wrapper {
+	background-color: #f4f2f2;
+}
+.create-wrapper {
+	background-color: #f4f2f2;
+}
+.content {
+	width: 90%;
+	margin: 30px auto 30px;
+	background-color: #f4f2f2;
+
+	/*border: 1px solid red;
+	background-color: aqua;*/
+}
+.content .main-content {
+	width: 70%;
+	float: left;
+	height: auto;
+	/*border: 1px solid green;*/
+}
+.content .main-content .post {
+	/*!!!!!!!!border: 3px solid purple;*/
+
+	/*border: 1px solid purple;*/
+	background-color: ;
+	width: 95%;
+	height: 970px;
+	margin: 10px auto;
+	margin-bottom: 55px;
+	border-radius: 5px;
+	background: ;
+	position: relative;
+	object-fit: contain;
+}
+/*
+.content .main-content .post .read-more{
+position: absolute;
+	bottom: 10px;
+}
+*/
+.content .main-content .post .post-wrapper {
+	background-color: ;
+	width: 80% ;
+	height: 100%;
+	margin:0 auto;
+	object-fit: contain;
+	/*border: 5px solid limegreen;*/
+
+}
+.content .main-content .post .picture {
+object-fit: contain;
+border: 3px solid lightgray;
+border-radius: .25rem;
+
+}
+
+.content .main-content .post .picture .post-image {
+	
+	width: 100%;
+	height: 75%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: scale-down;
+    /*border: 3px solid aqua;*/
+    background-color: white;
+
+}
+
+.content .main-content .post .post-preview {
+	padding: 10px;
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    background-color: white;
+    border:3px solid lightgray;
+    object-fit: contain;
+}
+
+.content .main-content .popular-title {
+	margin: 20px;
+}
+.clearfix {
+	/* YO KEEP THIS
+	overflow: auto;
+	*/
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.post .btn {
+	bottom: 10px;
+	padding: .5rem;
+	background-color: #f8f9fa;
+	border:1px solid gray;
+	border-radius: .25rem;
+}
+.post .btn:hover {
+	
+	background-color: lightgray;
+}
+
+/*SIDEBAR STUFF*/
+.content .sidebar {
+	width: 30%;
+	float: right;
+	height: 500px;
+}
+.content .sidebar.apost {
+	padding: 0px 10px;
+	/*background-color: yellow;
+*/
+}
+
+.content .main-content.apost .post-image {
+	width: 70%;
+	height: auto;
+	display: block;
+	margin: 10px auto;
+	
+}
+.content .sidebar .search {
+	/*background-color: green;*/
+	padding: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	margin-top: 80px;
+}
+
+.text-input {
+	padding: .7rem 1rem;
+	display: block;
+	width: 100%;
+	border-radius:5px;
+	outline: none;
+	color:black;
+	line-height: 1.5rem;
+	font-size: 1.2em;
+	font-family: 'Lora' serif;
+	/*border: 1px solid pink;*/
+}
+.content .sidebar .suggestions {
+	
+}
+.content .sidebar .group_suggest {
+	margin:0px;
+	padding:0px;
+}
+.content .sidebar .group_suggest a {
+	display: block;
+	padding: 15px 0px 15px 0px;
+	/*border: 1px solid red;
+	*/
+}
+/* Single Post styling*/
+.content .main-content.apost {
+	/*border: 1px solid green;
+	background-color: chartreuse;
+	*/
+	padding: 20px 50px;
+	font-size: 1.1em;
+	margin:10px auto;
+}
+.content .main-content.apost .post-content{
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+
+
+.create-wrapper .create-content {
+	flex: 8;
+	height: 130%;
+	padding: 40px, 40px, 40px;
+	/*overflow-y: visible;*/
+}
+
+#postPreview {
+
+	display: block;
+	width: 30%;
+	margin: 10px auto;
+	border-radius: 3%;
+	border: 1px solid lightgray;
+
+}
+
+
+form div {
+	margin-bottom: 15px;
+}
+
+
+@media only screen and (max-width: 986px) {
+	.content{
+		width: 100%;
+		height: auto;
+	}
+	.content .main-content {
+	width: 100%;
+
+	}
+	.content .main-content .post {
+		width: 100%;
+	}
+	.content .sidebar {
+		display: none;
+	}
+	
+}
+@media only screen and (max-width: 676px) {
+	.content{
+		width: 100%;
+		height: auto;
+	}
+	.content .main-content {
+	width: 100%;
+
+	}
+	.content .main-content .post {
+		width: 100%;
+	}
+	.content .main-content .post .post-wrapper {
+		width: 100%;
+	}
+	.content .sidebar {
+		display: none;
+	}
+	
+}
