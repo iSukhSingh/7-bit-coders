@@ -61,5 +61,5 @@ function deleteComments($conn) {
 			header("Location: profile_info.php");
 	}
 }
-?>
+
 
